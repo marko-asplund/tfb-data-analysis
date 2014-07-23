@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>tfb plots</title>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="tfb.css" rel="stylesheet">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="lib/papaparse-3.0.1.min.js"></script>
+<script src="tfb.js"></script>
+
+</head>
+
+<body>
+
+<ul id="myTab" class="nav nav-pills">
+  <li class="active"><a href="#" data-value="Type1">type 1</a></li>
+  <li><a href="#" data-value="Type2">type 2</a></li>
+  <li><a href="#" data-value="Type3">type 3</a></li>
+  <li><a href="#" data-value="Type4">type 4</a></li>
+  <li><a href="#" data-value="Type5">type 5</a></li>
+  <li><a href="#" data-value="Type6">type 6</a></li>
+</ul>
+
+<div id="container" style=""></div>
+</body>
+
+
+<script type="text/javascript">
+
+
+$(function () {
+		var options = {
+            title: {
+                text: 'tfb round 9 - db single query',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'tfb',
+                x: -20
+            },
+            xAxis: {
+                categories: ['8', '16', '32', '64', '128', '256']
+            },
+            yAxis: {
+                title: {
+                    text: 'responses / second'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: 'responses / second'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{}]
+        };
+
+        var getResults = function(options, resultsType) {
+            tfb['getResults'+resultsType](function(data) {
+                options.series = data;
+                $('#container').highcharts(options);
+            });
+        }
+
+        var tfb = new TfbData("http://localhost:8080/www");
+        getResults(options, 'Type1');
+
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+            var selectedType = $(this).data('value');
+            var myOpts = {
+                title: {
+                    text: 'foobar: '+selectedType
+                }
+            };
+            var opts = $.extend({}, options, myOpts);
+            getResults(opts, selectedType);
+        });
+
+    });
+    
+</script>
+
+
+</html>

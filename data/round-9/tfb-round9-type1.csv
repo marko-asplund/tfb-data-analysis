@@ -1,0 +1,133 @@
+Framework,8,16,32,64,128,256,Best,Cls,Lng,Plt,FE,Aos,DB,Dos,Orm,IA,Errors
+activeweb,66868,122695,183555,220022,215415,205164,220022,Plt,Jav,Act,Res,Lin,Non,Lin,Raw,Rea,0
+aspnet-jsonnet-mono,— Did not complete —,,,,,,,Plt,C#,Mon,ngx,Lin,Non,Lin,Raw,Rea,—
+aspnet-svcstk-mono,— Did not complete —,,,,,,,Plt,C#,Mon,ngx,Lin,Non,Lin,Raw,Rea,—
+aspnet-stripped,38734,64118,94368,105272,94483,94748,105272,Ful,C#,Net,IIS,Win,Non,Lin,Raw,Str,0
+aspnet-jsonnet,— Did not complete —,,,,,,,Plt,C#,Net,IIS,Win,Non,Lin,Raw,Rea,—
+aspnet-svcstk,— Did not complete —,,,,,,,Plt,C#,Net,IIS,Win,Non,Lin,Raw,Rea,—
+aspnet-mvc-mono,— Did not complete —,,,,,,,Ful,C#,Mon,ngx,Lin,Non,Lin,Raw,Rea,—
+aspnet,— Did not complete —,,,,,,,Ful,C#,Net,IIS,Win,Non,Lin,Raw,Rea,—
+beego,86421,142440,196682,207742,287740,297377,297377,Mcr,Go,Go,Non,Lin,Non,Lin,Raw,Rea,0
+bottle-pypy,67504,116004,145050,137240,144238,139800,145050,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+bottle-py3,41758,83324,117199,120371,128277,127750,128277,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+bottle-nginx-uwsgi,9261,9217,9053,9131,16560,16361,16560,Mcr,Py,uWS,ngx,Lin,My,Lin,Ful,Rea,0
+bottle,46554,96924,141963,149912,159153,158910,159153,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+cake,2081,3750,5032,5057,4641,4436,5057,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+codeigniter,4406,8588,12795,13600,12727,11512,13600,Ful,PHP,FPM,ngx,Lin,Non,Lin,Raw,Rea,0
+compojure,73643,122759,158025,158167,153147,146693,158167,Mcr,Clj,Svt,Res,Lin,My,Lin,Mcr,Rea,0
+cowboy,57822,110493,178686,197834,253357,281055,281055,Plt,Erl,Cow,Non,Lin,My,Lin,Raw,Rea,0
+cpoll_cppsp,143586,229657,385317,467163,769638,1057793,1057793,Mcr,C++,Cpl,Non,Lin,Non,Lin,Raw,Rea,0
+dancer,— Did not complete —,,,,,,,Ful,Prl,Plk,Sta,Lin,Non,Lin,Ful,Rea,—
+dart,21110,35653,48175,50927,54896,54349,54896,Plt,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+django-py3,9370,12248,9489,9029,8889,8862,12248,Ful,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+django-postgresql,10623,11971,9756,9444,9120,9090,11971,Ful,Py,Gun,Non,Lin,Pg,Lin,Ful,Rea,0
+django,10796,12082,9750,9467,9109,9080,12082,Ful,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+dropwizard,59083,109038,174112,189934,187665,181079,189934,Ful,Jav,Jty,Jty,Lin,My,Lin,Ful,Rea,0
+elli,81036,147335,202525,208224,234625,240704,240704,Plt,Erl,eli,Non,Lin,My,Lin,Raw,Rea,0
+evhttp-sharp,— Did not complete —,,,,,,,Mcr,C#,Mon,Non,Lin,Non,Lin,Raw,Rea,—
+express,42914,73453,112363,124189,145124,147533,147533,Mcr,JS,njs,Non,Lin,Non,Lin,Ful,Rea,0
+falcon,54240,107363,150479,161852,171119,171773,171773,Mcr,Py,Gun,Non,Lin,Non,Lin,Raw,Rea,0
+falcon-pypy,69458,118659,156621,150083,127675,138656,156621,Mcr,Py,Gun,Non,Lin,Non,Lin,Raw,Rea,0
+falcon-py3,41132,92200,130026,133844,144605,144747,144747,Mcr,Py,Gun,Non,Lin,Non,Lin,Raw,Rea,0
+falcore,83360,139726,192968,204405,268172,274991,274991,Mcr,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+finagle,0,0,0,0,0,0,0,Mcr,Sca,Nty,Non,Lin,My,Lin,Mcr,Rea,363121
+flask,19270,38836,54151,59618,60065,59331,60065,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+flask-nginx-uwsgi,9004,9168,9157,9303,23234,28310,28310,Mcr,Py,uWS,ngx,Lin,My,Lin,Ful,Rea,0
+flask-py3,18845,37032,51870,56178,57323,56175,57323,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+flask-pypy,22466,39101,51305,51111,46269,46655,51305,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+fuel,2934,5653,8402,8676,9264,9002,9264,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+gemini,126759,226788,368429,429322,725074,914749,914749,Ful,Jav,Svt,Res,Lin,My,Lin,Mcr,Rea,0
+go,99548,168207,223411,245700,332777,348555,348555,Plt,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+grails,33342,55714,71260,69422,70401,68604,71260,Ful,Grv,Svt,Res,Lin,My,Lin,Ful,Rea,0
+grizzly,108637,191436,333700,377224,621096,731583,731583,Mcr,Jav,Svt,Grz,Lin,Non,Lin,Raw,Rea,0
+grizzly-jersey,66945,119203,158774,158593,170865,176523,176523,Mcr,Jav,Svt,Grz,Lin,My,Lin,Ful,Rea,0
+hapi,19736,35075,52064,54858,55241,54951,55241,Mcr,JS,njs,Non,Lin,Non,Lin,Raw,Rea,0
+hhvm,31295,50728,60585,59618,58790,55398,60585,Plt,PHP,hhv,HPH,Lin,My,Lin,Raw,Rea,0
+http-kit,72853,90954,94334,97906,96297,88431,97906,Plt,Clj,htk,Non,Lin,My,Lin,Raw,Rea,0
+http-listener,57019,71605,93552,102353,108543,108178,108543,Plt,C#,Net,hts,Win,Non,Lin,Raw,Rea,0
+jester,37221,59657,80574,84710,101933,106099,106099,Mcr,Nim,Nim,ngx,Lin,My,Lin,Raw,Rea,0
+kelp,— Did not complete —,,,,,,,Ful,Prl,Plk,Sta,Lin,Non,Lin,Ful,Rea,—
+php-kohana,4553,8804,12783,13046,13570,12415,13570,Ful,PHP,FPM,ngx,Lin,Non,Lin,Raw,Rea,0
+lapis,47245,86343,150189,177415,312660,275486,312660,Ful,Lua,OpR,ngx,Lin,Pg,Lin,Ful,Rea,0
+laravel,1996,2955,3270,3261,2867,2630,3270,Ful,PHP,FPM,ngx,Lin,Non,Lin,Raw,Rea,47135
+lift-stateless,37924,52485,54656,54958,54669,54630,54958,Ful,Sca,Nty,Non,Lin,My,Lin,Ful,Rea,0
+lithium,3406,6534,9338,8908,7473,7038,9338,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+luminus,52278,72538,64593,66466,69104,68322,72538,Mcr,Clj,Svt,Res,Lin,My,Lin,Ful,Rea,0
+micromvc,14214,26490,40220,41510,42398,35889,42398,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+mojolicious,— Did not complete —,,,,,,,Ful,Prl,Plk,Sta,Lin,Non,Lin,Ful,Rea,—
+nancy,1574,2771,3547,3698,1577,884,3698,Mcr,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,0
+nancy,19016,31671,45424,49194,57287,62108,62108,Mcr,C#,Net,IIS,Win,My,Lin,Raw,Rea,0
+nancy-libevent2,12852,22452,30444,32619,34319,33313,34319,Mcr,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,0
+netty,118817,209012,359852,421693,714280,866318,866318,Plt,Jav,Nty,Non,Lin,Non,Lin,Raw,Rea,0
+ninja-standalone,34939,33581,35124,34568,34704,34710,35124,Ful,Jav,Jty,Jty,Lin,My,Lin,Ful,Rea,0
+ninja-standalone,37003,37340,34716,36173,34283,33025,37340,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+nodejs,56474,104460,159646,174823,228261,228887,228887,Plt,JS,njs,Non,Lin,Non,Lin,Raw,Rea,0
+onion,0,0,0,0,0,0,0,Plt,C,Oni,Non,Lin,Non,Lin,Raw,Rea,0
+openresty,100473,168917,287870,344125,483928,498777,498777,Plt,Lua,OpR,ngx,Lin,My,Lin,Raw,Rea,0
+php-phalcon-micro,28036,48925,77615,83473,103314,105754,105754,Mcr,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+php-phalcon,18108,33345,51562,53756,67369,63452,67369,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+php,46253,80256,124869,140533,166998,180147,180147,Plt,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+phpixie,10126,18932,27856,29229,31560,32689,32689,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+phreeze,105,155,220,216,339,355,355,Mcr,PHP,FPM,ngx,Lin,My,Lin,Mcr,Rea,0
+plack,— Did not complete —,,,,,,,Mcr,Prl,Plk,Sta,Lin,My,Lin,Raw,Rea,—
+plain-windows,100938,149468,157453,158227,196373,190905,196373,Ful,Sca,Pla,Non,Win,My,Lin,Ful,Rea,0
+plain-servlet-linux,93631,101199,110548,108899,166673,182512,182512,Ful,Sca,Pla,Non,Lin,My,Lin,Ful,Rea,0
+plain,94669,102534,108569,113431,169074,200937,200937,Ful,Sca,Pla,Non,Lin,My,Lin,Mcr,Rea,0
+play1,15353,17632,17425,17256,17236,17217,17632,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play1-siena,54175,92527,133084,142923,142812,135805,142923,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-java-jpa,40044,65544,89631,97139,115306,115952,115952,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-scala-anorm,684,28576,25368,76563,86320,97622,97622,Ful,Sca,Nty,Non,Win,My,Lin,Ful,Rea,758
+play-scala-anorm,56015,99411,151316,160213,174116,176265,176265,Ful,Sca,Nty,Non,Lin,My,Lin,Ful,Rea,0
+pyramid-py2,8786,12979,17513,17801,24571,28591,28591,Ful,Py,Wsg,Gun,Lin,Pg,Lin,Ful,Rea,37
+pyramid-py3,7509,11806,14838,15842,22383,25500,25500,Ful,Py,Wsg,Gun,Lin,Pg,Lin,Ful,Rea,0
+rack-jruby,89128,99440,109211,123470,302527,323096,323096,Plt,Rby,JRb,Tor,Lin,Non,Lin,Ful,Rea,0
+rack-ruby,46234,85176,110732,114136,114466,113889,114466,Plt,Rby,Rac,Uni,Lin,Non,Lin,Ful,Rea,0
+racket-ws,1297,1305,1242,1206,1103,861,1305,Ful,Rac,Rac,Non,Lin,My,Lin,Mcr,Rea,0
+rails-stripped-jruby,7132,5515,4312,4000,2614,2377,7132,Ful,Rby,JRb,Tor,Lin,My,Lin,Ful,Str,0
+rails-jruby,5236,4506,3713,3481,2465,1699,5236,Ful,Rby,JRb,Tor,Lin,My,Lin,Ful,Rea,0
+rails-ruby,5530,6091,6064,6024,5982,5982,6091,Ful,Rby,Rac,Uni,Lin,My,Lin,Ful,Rea,0
+rails-stripped-ruby,7119,7908,7929,7909,7832,7796,7929,Ful,Rby,Rac,Uni,Lin,My,Lin,Ful,Str,0
+restexpress,54910,54791,109091,148335,213233,225445,225445,Mcr,Jav,Nty,Non,Lin,Non,Lin,Raw,Rea,0
+revel,77055,137609,184452,197003,277123,284683,284683,Ful,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+ringojs,37101,68535,70524,73338,102239,106037,106037,Plt,JS,Rin,Jty,Lin,Non,Lin,Raw,Rea,0
+ringojs-conv,28693,54100,58301,60772,79413,82404,82404,Mcr,JS,Rin,Jty,Lin,My,Lin,Mcr,Rea,0
+scalatra,58121,101224,151629,160983,155424,150035,160983,Mcr,Sca,Svt,Res,Lin,Non,Lin,Ful,Rea,0
+senthot,— Did not complete —,,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,—
+servicestack-nginx-d,1692,3094,4110,4302,4639,1938,4639,Plt,C#,Mon,ngx,Lin,Non,Lin,Raw,Rea,0
+servicestack,— Did not complete —,,,,,,,Plt,C#,Mon,XSP,Lin,Non,Lin,Raw,Rea,—
+servlet,147690,224194,414021,418140,798761,831515,831515,Plt,Jav,Svt,Res,Lin,Non,Lin,Raw,Rea,0
+jetty-servlet,96137,110620,198822,199916,234041,245709,245709,Plt,Jav,Jty,Jty,Lin,Non,Lin,Raw,Rea,0
+silex-orm,2234,3553,4852,5115,4994,4849,5115,Mcr,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,30924
+silex,— Did not complete —,,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,—
+sinatra-jruby,19949,40746,49412,53795,70180,70884,70884,Mcr,Rby,JRb,Tor,Lin,My,Lin,Ful,Rea,0
+sinatra-ruby,16756,22257,22610,22926,22975,23092,23092,Mcr,Rby,Rac,Uni,Lin,My,Lin,Ful,Rea,0
+slim,5714,11106,16137,16387,13892,12988,16387,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+snap,19275,15016,9976,12897,12594,12801,19275,Mcr,Hkl,Snp,Non,Lin,My,Lin,Ful,Rea,0
+spark,99965,166636,248592,254111,245422,235331,254111,Mcr,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+spray,— Removed at request of framework maintainer - outdated version —,,,,,,,Mcr,Sca,Spr,Non,Lin,Non,Lin,Raw,Rea,—
+spring,35117,63378,70874,70330,69341,68909,70874,Ful,Jav,Svt,Tom,Lin,My,Lin,Ful,Rea,0
+start,19124,32544,44112,46031,50853,51235,51235,Mcr,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+stream,18576,31481,42473,45137,49922,50310,50310,Mcr,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+symfony2,932,1058,904,871,746,697,1058,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,14110
+symfony2,940,1053,914,865,749,699,1053,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Str,14069
+tapestry,63017,114193,184816,198921,205351,191300,205351,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+tornado,23810,43317,68140,72284,87588,87708,87708,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+tornado-pypy,70363,98357,158680,159874,162448,165676,165676,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+tornado-py3,19199,38612,58021,56792,71807,72122,72122,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+treefrog,1727,24181,33205,70993,106339,106948,106948,Ful,C++,Tre,Non,Lin,My,Lin,Mcr,Rea,0
+treefrog-thread,61438,101723,148313,165471,218547,223033,223033,Ful,C++,Tre,Non,Lin,My,Lin,Mcr,Rea,0
+undertow,123129,206194,381293,413168,752107,906076,906076,Plt,Jav,Utw,Non,Lin,Non,Lin,Raw,Rea,0
+undertow edge,125301,208219,369714,432191,739276,880042,880042,Plt,Jav,Und,Non,Lin,Non,Lin,Raw,Rea,0
+unfiltered,— Did not complete —,,,,,,,Mcr,Sca,Nty,Non,Lin,My,Lin,Mcr,Rea,—
+ur/web,53633,77812,122556,144626,397611,395317,397611,Ful,Ur,Ur/,Non,Lin,Non,Lin,Mcr,Rea,0
+vertx,— Removed at request of framework maintainer - outdated version —,,,,,,,Plt,Jav,vtx,Non,Lin,Mo,Lin,Raw,Rea,—
+wai,110415,160008,162104,158432,146905,146557,162104,Plt,Hkl,Wai,Wrp,Lin,Non,Lin,Ful,Rea,0
+web-simple,— Did not complete —,,,,,,,Mcr,Prl,Plk,Sta,Lin,Non,Lin,Raw,Rea,—
+webgo,69109,115992,159565,169637,197626,207049,207049,Mcr,Go,Go,Non,Lin,Non,Lin,Ful,Rea,0
+wicket,69014,131252,224893,261195,344032,315956,344032,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+wsgi,67042,126282,178255,180945,219253,220602,220602,Plt,Py,Gun,Non,Lin,Non,Lin,Raw,Rea,0
+wsgi-nginx-uwsgi,25301,28112,30433,31884,87450,72467,87450,Plt,Py,uWS,ngx,Lin,Non,Lin,Raw,Rea,0
+uwsgi-nginx-uwsgi,23605,25227,23966,23898,38387,39068,39068,Plt,Py,Wsg,ngi,Lin,Non,Lin,Raw,Rea,0
+uwsgi,22301,32232,36971,39333,44522,44971,44971,Plt,Py,Wsg,uWS,Lin,Non,Lin,Raw,Rea,0
+yaf-raw,30008,52046,81982,87499,109352,110929,110929,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+yesod,54662,84170,85206,89464,82746,82288,89464,Mcr,Hkl,Wai,Wrp,Lin,My,Lin,Raw,Rea,0

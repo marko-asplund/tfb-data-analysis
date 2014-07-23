@@ -1,0 +1,158 @@
+Framework,1,5,10,15,20,Cls,Lng,Plt,FE,Aos,DB,Dos,Orm,IA,Errors
+activeweb,11004,10044,8849,7415,5926,Plt,Jav,Act,Res,Lin,My,Lin,Raw,Rea,0
+aspnet-stripped-raw,46032,27959,18960,14096,10720,Ful,C#,Net,IIS,Win,My,Lin,Raw,Str,0
+aspnet-stripped-raw,2145,2827,4233,4309,3915,Ful,C#,Net,IIS,Win,Pg,Lin,Raw,Str,0
+aspnet-stripped-raw,— Did not complete —,,,,,,Ful,C#,Net,IIS,Win,Mo,Lin,Raw,Str
+aspnet-postgresql-en,10154,4590,2878,2031,1512,Ful,C#,Net,IIS,Win,Pg,Lin,Ful,Rea,0
+aspnet-postgresql-ra,12515,10877,7537,5238,4235,Ful,C#,Net,IIS,Win,Pg,Lin,Raw,Rea,0
+aspnet-mvc-mono,— Did not complete —,,,,,,Ful,C#,Mon,ngx,Lin,Mo,Lin,Raw,Rea
+aspnet-mysql-entityf,13867,5061,2399,1385,1076,Ful,C#,Net,IIS,Win,My,Lin,Ful,Rea,0
+aspnet-mvc-mono,— Did not complete —,,,,,,Ful,C#,Mon,ngx,Lin,Pg,Lin,Ful,Rea
+aspnet-mvc-mono,— Did not complete —,,,,,,Ful,C#,Mon,ngx,Lin,Pg,Lin,Raw,Rea
+aspnet-mvc-mono,620,623,623,625,523,Ful,C#,Mon,ngx,Lin,My,Lin,Ful,Rea,0
+aspnet-mongodb-raw,— Did not complete —,,,,,,Ful,C#,Net,IIS,Win,Mo,Lin,Raw,Rea
+aspnet-mysql-raw,22365,18293,14486,11756,9861,Ful,C#,Net,IIS,Win,My,Lin,Raw,Rea,0
+aspnet-mvc-mono,3686,3300,3073,2719,2452,Ful,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,0
+bottle-pypy,7232,2103,1259,909,738,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+bottle-py3,10212,3516,1941,1334,1017,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+bottle-nginx-uwsgi,14412,5246,2894,1915,1415,Mcr,Py,uWS,ngx,Lin,My,Lin,Ful,Rea,0
+bottle-mysql-raw,50524,25013,15692,11438,9000,Mcr,Py,Gun,Non,Lin,My,Lin,Raw,Rea,0
+bottle,11455,4063,2262,1571,1196,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+cake,— Did not complete —,,,,,,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea
+codeigniter-raw,10624,9576,8688,7920,7190,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+compojure,24951,5808,2793,1981,1429,Mcr,Clj,Svt,Res,Lin,My,Lin,Mcr,Rea,0
+compojure-raw,29811,5589,2682,1780,1358,Mcr,Clj,Svt,Res,Lin,My,Lin,Raw,Rea,0
+cowboy,18895,3874,1940,1298,978,Plt,Erl,Cow,Non,Lin,My,Lin,Raw,Rea,0
+cpoll_cppsp-raw,83431,16310,8167,5408,4072,Plt,C++,Cpl,Non,Lin,My,Lin,Raw,Rea,0
+cpoll_cppsp-postgres,138833,27609,14441,9247,7189,Plt,C++,Cpl,Non,Lin,Pg,Lin,Raw,Rea,4515
+cpoll_cppsp-postgres,119079,15169,6714,4342,2327,Plt,C++,Cpl,Non,Lin,Pg,Lin,Raw,Rea,0
+dancer-raw,— Did not complete —,,,,,,Ful,Prl,Plk,Sta,Lin,My,Lin,Raw,Rea
+dart,42408,22449,12154,8052,6104,Plt,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+django,9859,5490,3302,2340,1810,Ful,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+django-py3,9603,5173,3110,2212,1720,Ful,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+django-postgresql,9606,6049,3696,2654,2075,Ful,Py,Gun,Non,Lin,Pg,Lin,Ful,Rea,0
+dropwizard,75175,36164,20824,14626,11270,Ful,Jav,Jty,Jty,Lin,My,Lin,Ful,Rea,0
+elli,24324,4959,2454,1649,1218,Plt,Erl,eli,Non,Lin,My,Lin,Raw,Rea,0
+express-mongodb,31692,10506,5748,4051,3103,Mcr,JS,njs,Non,Lin,Mo,Lin,Ful,Rea,0
+express-mysql,73609,31353,17495,12077,9238,Mcr,JS,njs,Non,Lin,My,Lin,Ful,Rea,0
+falcore,0,18123,9284,6242,4717,Mcr,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+flask-py3,8486,3207,1821,1260,969,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+flask-pypy,5189,1746,1099,820,684,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+flask-pypy,10234,4914,3529,2555,2031,Mcr,Py,Gun,Non,Lin,My,Lin,Raw,Rea,0
+flask,8987,3564,2082,1446,1111,Mcr,Py,Gun,Non,Lin,My,Lin,Ful,Rea,0
+flask,23213,16489,12031,9404,7710,Mcr,Py,Gun,Non,Lin,My,Lin,Raw,Rea,0
+flask-nginx-uwsgi,10500,4298,2520,1769,1317,Mcr,Py,uWS,ngx,Lin,My,Lin,Ful,Rea,0
+fuel,5345,4266,3472,2921,2522,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+gemini,189648,43417,21644,13449,10675,Ful,Jav,Svt,Res,Lin,My,Lin,Mcr,Rea,0
+go,76780,18404,9421,6317,4759,Plt,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+grails,44031,11303,5436,3577,2662,Ful,Grv,Svt,Res,Lin,My,Lin,Ful,Rea,0
+grizzly-jersey,44727,21986,12147,8307,6333,Mcr,Jav,Svt,Grz,Lin,My,Lin,Ful,Rea,0
+hapi-mysql,32537,19629,14543,10706,8476,Mcr,JS,njs,Non,Lin,My,Lin,Raw,Rea,0
+hapi,20965,9130,5279,3777,2940,Mcr,JS,njs,Non,Lin,Mo,Lin,Raw,Rea,0
+hhvm,70277,35750,20275,14059,10740,Plt,PHP,hhv,HPH,Lin,My,Lin,Raw,Rea,0
+http-kit,80480,44121,22427,15005,11268,Plt,Clj,htk,Non,Lin,My,Lin,Raw,Rea,0
+http-listener,1425,1608,1715,1776,1894,Plt,C#,Net,hts,Win,Pg,Lin,Raw,Rea,0
+http-listener,16519,7383,4233,3153,2625,Plt,C#,Net,hts,Win,My,Lin,Raw,Rea,0
+http-listener,— Did not complete —,,,,,,Plt,C#,Net,hts,Win,Mo,Lin,Raw,Rea
+kelp-raw,— Did not complete —,,,,,,Ful,Prl,Plk,Sta,Lin,My,Lin,Raw,Rea
+php-kohana-raw,7091,6411,5920,5361,5031,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+lapis,22789,1141,2083,1850,1250,Ful,Lua,OpR,ngx,Lin,Pg,Lin,Ful,Rea,2413
+laravel-raw,— Did not complete —,,,,,,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+lift-stateless,4443,3792,3073,2542,2190,Ful,Sca,Nty,Non,Lin,My,Lin,Ful,Rea,0
+lithium,2832,2093,1556,1248,1012,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+luminus,21172,4944,2484,1823,1285,Mcr,Clj,Svt,Res,Lin,My,Lin,Ful,Rea,0
+luminus-raw,27357,5215,2689,1757,1334,Mcr,Clj,Svt,Res,Lin,My,Lin,Raw,Rea,0
+micromvc,17025,11663,7604,5698,4592,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+mojolicious-raw,— Did not complete —,,,,,,Ful,Prl,Plk,Sta,Lin,My,Lin,Raw,Rea
+nancy,0,0,0,0,0,Mcr,C#,Net,IIS,Win,My,Lin,Raw,Rea,114349
+nancy,0,0,0,0,0,Mcr,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,9866
+nancy-libevent2,0,0,0,0,0,Mcr,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,80812
+ninja-standalone,30277,26420,20023,13746,10412,Ful,Jav,Jty,Jty,Lin,My,Lin,Ful,Rea,0
+ninja-standalone,32862,27139,17234,11677,8850,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+nodejs-mongodb,37707,11252,6100,4224,3229,Plt,JS,njs,Non,Lin,Mo,Lin,Ful,Rea,0
+nodejs-mongodb-raw,83021,17533,8846,5906,4430,Plt,JS,njs,Non,Lin,Mo,Lin,Raw,Rea,0
+nodejs-mysql,82669,31958,17191,11706,8878,Plt,JS,njs,Non,Lin,My,Lin,Ful,Rea,0
+nodejs-mysql-raw,70454,15702,7941,5296,3888,Plt,JS,njs,Non,Lin,My,Lin,Raw,Rea,0
+onion-raw,55323,14496,7535,5082,3849,Plt,C,Oni,Non,Lin,My,Lin,Raw,Rea,71
+openresty,95581,34068,18356,13747,8470,Plt,Lua,OpR,ngx,Lin,My,Lin,Raw,Rea,0
+phalcon,— Did not complete —,,,,,,Ful,PHP,FPM,ngx,Lin,Mo,Lin,Ful,Rea
+php-phalcon,16934,13644,9571,7232,5764,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+php-phalcon-micro,68912,29606,16945,11843,6964,Mcr,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+php-raw,130931,32869,12530,7401,5936,Plt,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+php,— Did not complete —,,,,,,Plt,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea
+phpixie,15204,11871,9316,7559,6322,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,0
+phreeze,5709,4244,3990,3638,3107,Mcr,PHP,FPM,ngx,Lin,My,Lin,Mcr,Rea,0
+plain-windows,80034,28169,15379,10447,8014,Ful,Sca,Pla,Non,Win,My,Lin,Ful,Rea,0
+plain-servlet-linux,117626,36178,19358,13190,10005,Ful,Sca,Pla,Non,Lin,My,Lin,Ful,Rea,0
+plain,118468,36178,19237,13104,9920,Ful,Sca,Pla,Non,Lin,My,Lin,Mcr,Rea,0
+play1,17083,15879,11247,8327,6607,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play1-siena,16539,10668,5546,3767,2874,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-slick,80121,17478,8721,5789,4322,Ful,Sca,Nty,Non,Lin,My,Lin,Raw,Rea,0
+play-java-ebean,71085,30501,17306,12109,9465,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-scala-anorm,30731,7412,3806,2553,1909,Ful,Sca,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-scala-mongodb,— Did not complete —,,,,,,Ful,Sca,Nty,Non,Lin,Mo,Lin,Raw,Rea
+play-scala-anorm,11814,2430,1134,796,596,Ful,Sca,Nty,Non,Win,My,Lin,Ful,Rea,589
+play-activate-mysql,45263,18812,10595,7421,5685,Ful,Sca,Nty,Non,Lin,My,Lin,Ful,Rea,0
+play-java-jpa,62114,12226,6095,4056,3045,Ful,Jav,Nty,Non,Lin,My,Lin,Ful,Rea,0
+pyramid-py3,9946,3355,1865,1284,974,Ful,Py,Wsg,Gun,Lin,Pg,Lin,Ful,Rea,30
+pyramid-py2,11069,3757,2093,1475,1107,Ful,Py,Wsg,Gun,Lin,Pg,Lin,Ful,Rea,29
+racket-ws,— Did not complete —,,,,,,Ful,Rac,Rac,Non,Lin,My,Lin,Mcr,Rea
+rails-jruby,1229,982,705,559,464,Ful,Rby,JRb,Tor,Lin,My,Lin,Ful,Rea,0
+rails-ruby,3757,1644,1016,737,580,Ful,Rby,Rac,Uni,Lin,My,Lin,Ful,Rea,0
+rails-stripped-jruby,1281,1051,755,586,496,Ful,Rby,JRb,Tor,Lin,My,Lin,Ful,Str,0
+rails-stripped-ruby,4621,1856,1106,794,618,Ful,Rby,Rac,Uni,Lin,My,Lin,Ful,Str,0
+restexpress-mysql-ra,1650,1667,1638,1565,1551,Mcr,Jav,Nty,Non,Lin,My,Lin,Raw,Rea,8087
+restexpress-mongodb,69540,15607,7967,5347,4026,Mcr,Jav,Nty,Non,Lin,Mo,Lin,Raw,Rea,0
+revel,73133,18058,9239,6236,4704,Ful,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+revel-qbs,70199,17007,8718,5862,4416,Ful,Go,Go,Non,Lin,My,Lin,Raw,Rea,0
+ringojs-conv,45989,12821,6729,4558,3446,Mcr,JS,Rin,Jty,Lin,My,Lin,Mcr,Rea,0
+ringojs,78332,24704,19605,12837,9809,Plt,JS,Rin,Jty,Lin,My,Lin,Raw,Rea,0
+scalatra-raw,98337,38663,19904,13691,10286,Mcr,Sca,Svt,Res,Lin,My,Lin,Raw,Rea,0
+senthot,— Did not complete —,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+servicestack,— Did not complete —,,,,,,Plt,C#,Mon,XSP,Lin,Pg,Lin,Raw,Rea
+servicestack,1791,1172,1505,1499,1382,Plt,C#,Mon,ngx,Lin,My,Lin,Raw,Rea,0
+servicestack,— Did not complete —,,,,,,Plt,C#,Mon,ngx,Lin,Mo,Lin,Raw,Rea
+servicestack,— Did not complete —,,,,,,Plt,C#,Mon,ngx,Lin,Pg,Lin,Raw,Rea
+servicestack,— Did not complete —,,,,,,Plt,C#,Mon,XSP,Lin,Mo,Lin,Raw,Rea
+servicestack,— Did not complete —,,,,,,Plt,C#,Mon,XSP,Lin,My,Lin,Raw,Rea
+servlet-postgres-raw,90134,21183,12151,8522,6530,Plt,Jav,Svt,Res,Lin,Pg,Lin,Raw,Rea,0
+servlet-raw,170702,37052,22113,14159,10127,Plt,Jav,Svt,Res,Lin,My,Lin,Raw,Rea,0
+silex,— Did not complete —,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+silex,— Did not complete —,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+silex-orm,1285,1089,1020,970,901,Mcr,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,13357
+silica,— Did not complete —,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+sinatra-ruby,962,282,153,104,79,Mcr,Rby,Rac,Uni,Lin,My,Lin,Ful,Rea,0
+sinatra-jruby,2458,1497,1063,837,714,Mcr,Rby,JRb,Tor,Lin,My,Lin,Ful,Rea,0
+slim,— Did not complete —,,,,,,Mcr,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea
+snap,20061,4451,7247,1337,1370,Mcr,Hkl,Snp,Non,Lin,My,Lin,Ful,Rea,0
+spark,22133,8350,2658,760,404,Mcr,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+spring,18218,5200,2725,1862,1416,Ful,Jav,Svt,Tom,Lin,My,Lin,Ful,Rea,0
+start,39473,21397,11819,8056,6104,Mcr,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+start,39797,26840,19899,15686,12859,Mcr,Dar,Dar,ngx,Lin,Mo,Lin,Raw,Rea,0
+stream,38362,20991,12101,8032,6104,Mcr,Dar,Dar,ngx,Lin,Pg,Lin,Raw,Rea,0
+stream,39183,26391,19600,15392,12659,Mcr,Dar,Dar,ngx,Lin,Mo,Lin,Raw,Rea,0
+symfony2,494,485,473,467,459,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Rea,6852
+symfony2-raw,690,686,681,675,673,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,10057
+symfony2,496,486,475,468,459,Ful,PHP,FPM,ngx,Lin,My,Lin,Ful,Str,6856
+symfony2,637,630,625,622,619,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Str,9245
+tapestry,62276,33936,20086,14172,10948,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+tornado-py3,27355,9323,4741,2708,1878,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+tornado,32997,10695,5110,2967,2018,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+tornado-pypy,48933,11936,6375,4352,3244,Plt,Py,Tor,Non,Lin,Mo,Lin,Raw,Rea,0
+treefrog,67031,22895,11506,7694,5784,Ful,C++,Tre,Non,Lin,My,Lin,Mcr,Rea,0
+treefrog-thread,104311,22980,11649,7736,5702,Ful,C++,Tre,Non,Lin,My,Lin,Mcr,Rea,0
+undertow,126000,44652,22291,14764,11066,Plt,Jav,Utw,Non,Lin,My,Lin,Raw,Rea,0
+undertow,93828,21771,12523,8795,6882,Plt,Jav,Utw,Non,Lin,Pg,Lin,Raw,Rea,0
+undertow,132636,30128,15493,10402,7830,Plt,Jav,Utw,Non,Lin,Mo,Lin,Raw,Rea,0
+undertow edge,128902,30131,15472,10425,7877,Plt,Jav,Und,Non,Lin,Mo,Lin,Raw,Rea,0
+undertow edge,125012,44401,22225,14824,11101,Plt,Jav,Und,Non,Lin,My,Lin,Raw,Rea,0
+undertow edge,93970,21224,12540,8647,6699,Plt,Jav,Und,Non,Lin,Pg,Lin,Raw,Rea,0
+unfiltered,108221,24045,12187,8199,6161,Mcr,Sca,Nty,Non,Lin,My,Lin,Mcr,Rea,0
+urweb-postgres,89933,36321,19453,13175,9953,Ful,Ur,Ur/,Non,Lin,Pg,Lin,Mcr,Rea,0
+urweb-mysql,69875,18030,9294,6171,4546,Ful,Ur,Ur/,Non,Lin,My,Lin,Mcr,Rea,0
+vertx,— Removed at request of framework maintainer - outdated version —,,,,,,Plt,Jav,vtx,Non,Lin,Mo,Lin,Raw,Rea
+web-simple-raw,— Did not complete —,,,,,,Mcr,Prl,Plk,Sta,Lin,My,Lin,Raw,Rea
+wicket,92845,35702,20294,13696,10390,Ful,Jav,Svt,Res,Lin,My,Lin,Ful,Rea,0
+yaf-raw,70690,19938,13091,11652,8512,Ful,PHP,FPM,ngx,Lin,My,Lin,Raw,Rea,0
+yesod,37073,13257,7567,5199,4036,Mcr,Hkl,Wai,Wrp,Lin,My,Lin,Raw,Rea,0
+yesod,5985,1186,594,387,290,Mcr,Hkl,Wai,Wrp,Lin,Mo,Lin,Raw,Rea,0
