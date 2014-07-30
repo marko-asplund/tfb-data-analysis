@@ -1,6 +1,20 @@
 
-#container {
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  margin-bottom: 20px;	
+}
+
+#chart-container {
 	min-width: 310px;
 	height: 600px;
 	margin: 0 auto
 }
+

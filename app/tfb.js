@@ -20,41 +20,13 @@ function parseData(data) {
 
 function TfbData() {
 	return {
-		getResultsType1: function(onReady) {
-			console.log("getResultsType1");
-			$.getJSON("/tfb-data-series.json", function(data) {
-				onReady(data);
-			});
-		},
-		getResultsType2: function(onReady) {
-			console.log("getResultsType2");
-			$.get("/data/round-9/tfb-round9-type2.csv", function(data) {
+		getResults: function(tfbRound, testClass, onReady) {
+			console.log('getResults: '+tfbRound+', '+testClass);
+			$.get('/data/'+tfbRound+'/'+'tfb-'+testClass+'.csv', function(data) {
 				onReady(parseData(data));
 			});
 		},
-		getResultsType3: function(onReady) {
-			console.log("getResultsType3");
-			$.getJSON("/tfb-data-series.json", function(data) {
-				onReady(data);
-			});
-		},
-		getResultsType4: function(onReady) {
-			console.log("getResultsType4");
-			$.getJSON("/tfb-data-series.json", function(data) {
-				onReady(data);
-			});
-		},
-		getResultsType5: function(onReady) {
-			console.log("getResultsType5");
-			$.getJSON("/tfb-data-series.json", function(data) {
-				onReady(data);
-			});
-		},
-		getResultsType6: function(onReady) {
-			console.log("getResultsType6");
-			$.getJSON("/tfb-data-series.json", function(data) {
-				onReady([]);
-			});
+		foo: function(onReady) {
 		}
 
 	}

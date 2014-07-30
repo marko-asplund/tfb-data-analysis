@@ -1,0 +1,148 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>tfb plots</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="tfb.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="lib/papaparse-3.0.1.min.js"></script>
+    <script src="tfb.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">TFB data analysis</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active" data-round="round-9"><a href="#">Round9</a></li>
+              <li data-round="round-10"><a href="#">Round10</a></li> <!-- TODO: remove -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="testclass-selection">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" data-testclass="type1">JSON serialization</button>
+          <button type="button" class="btn btn-default" data-testclass="type2">Single query</button>
+          <button type="button" class="btn btn-default" data-testclass="type3">Multiple queries</button>
+          <button type="button" class="btn btn-default" data-testclass="type4">Fortunes</button>
+          <button type="button" class="btn btn-default" data-testclass="type5">Data updates</button>
+          <button type="button" class="btn btn-default" data-testclass="type6">Plaintext</button>
+        </div>
+      </div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>TFB data analysis</h1>
+        <p>Benchmark data analysis for <a href="http://www.techempower.com/">TechEmpower Web Framework Benchmarks benchmarks</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <div id="chart-container" style=""></div>
+
+  </body>
+
+
+  <script type="text/javascript">
+
+    $(function () {
+      var options = {
+        title: {
+          text: 'tfb round 9 - db single query',
+                  x: -20 //center
+                },
+                subtitle: {
+                  text: 'tfb',
+                  x: -20
+                },
+                xAxis: {
+                  categories: ['8', '16', '32', '64', '128', '256']
+                },
+                yAxis: {
+                  title: {
+                    text: 'responses / second'
+                  },
+                  plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                  }]
+                },
+                tooltip: {
+                  valueSuffix: 'responses / second'
+                },
+                legend: {
+                  layout: 'vertical',
+                  align: 'right',
+                  verticalAlign: 'middle',
+                  borderWidth: 0
+                },
+                series: [{}]
+              };
+
+              var tfb = new TfbData();
+
+              var getResults = function(options) {
+                var tfbRound = $('.navbar-nav li.active').data('round');
+                var testClass = $('.testclass-selection .btn-group button.active').data('testclass');
+                var myOpts = {
+                  title: {
+                    text: tfbRound + ' / ' + testClass
+                  }
+                };
+                var opts = $.extend({}, options, myOpts);
+                tfb.getResults(tfbRound, testClass, function(data) {
+                  opts.series = data;
+                  $('#chart-container').highcharts(opts);
+                });
+              }
+
+              $('.navbar-nav li').click(function(e) {
+                $('.navbar-nav li.active').removeClass("active");
+                $(this).addClass('active');
+                getResults();
+              });
+
+              $('.testclass-selection .btn-group button:first').addClass('active');
+              $('.testclass-selection .btn-group button').click(function(e) {
+                $('.testclass-selection .btn-group button.active').removeClass('active');
+                $(this).addClass("active");
+                getResults();
+              });
+
+              $('.navbar-nav li, .testclass-selection .btn-group button').bind('click', function(e) {
+                $('.jumbotron').hide();
+                $(this).unbind(e);
+              });
+
+            });
+
+</script>
+
+
+</html>
