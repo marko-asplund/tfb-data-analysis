@@ -37,7 +37,7 @@
 
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active" data-round="round-9"><a href="#">Round9</a></li>
+              <li class="active" data-round="round-9"><a href="#">Round 9</a></li>
               <!-- <li data-round="round-10"><a href="#">Round10</a></li> -->
             </ul>
           </div>
@@ -55,26 +55,28 @@
         </div>
       </div>
 
-      <div class="well">
-        <p>Click on framework names to select / unselect data for visualization.</p>
-      </div>
-
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>TFB data visualization</h1>
-        <p>Benchmark data analysis for TechEmpower Web Framework Benchmarks.</p>
+        <h2>TFB data visualization</h2>
+
+        <p>Benchmark data visualization for TechEmpower Web Framework Benchmarks.</p>
+
         <p>This site visualizes how well different test implementations scale as the number of client
         connections increases. This is done by plotting test implementation throughput against concurrency level
         for test types 1, 2, 4 and 6. Test types 3 and 5 plot throughput against the number of DB queries per 
         request.</p>
+
         <p>Well-scaling test implementations should have a positive, steep slope for test types 1, 2, 4 and 6
         whereas for test types 3 and 5 the slope is expected to be negative.</p>
+
+        <p>Click on buttons above to select test type and then on framework names to select / unselect data for visualization.</p>
+
         <p><a class="btn btn-primary btn-lg" role="button" href="http://www.techempower.com/benchmarks/">Learn more &raquo;</a></p>
       </div>
 
-    </div> <!-- /container -->
+      <div id="chart-container" style=""></div>
 
-    <div id="chart-container" style=""></div>
+    </div> <!-- /container -->
 
   </body>
 
@@ -117,8 +119,6 @@
       });
 */
 
-      $('.well').hide();
-
       $('.testclass-selection .btn-group button:first').addClass('active');
       $('.testclass-selection .btn-group button').click(function(e) {
         $('.testclass-selection .btn-group button.active').removeClass('active');
@@ -128,7 +128,6 @@
 
       $('.testclass-selection .btn-group button').bind('click', function(e) {
         $('.jumbotron').hide();
-        $('.well').show();
         $(this).unbind(e);
       });
 

@@ -13,8 +13,12 @@ body {
 }
 
 #chart-container {
-	min-width: 310px;
-	height: 600px;
 	margin: 0 auto
 }
 
+@media (min-width: 768px) {
+	#chart-container {
+		min-width: 400px;
+		min-height: 700px;
+	}
+}
