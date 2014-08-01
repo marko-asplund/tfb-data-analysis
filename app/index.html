@@ -100,7 +100,7 @@
 
       var getResults = function() {
         var tfbRound = $('.navbar-nav li.active').data('round');
-        var testClass = $('.testclass-selection .btn-group button.active').data('testclass');
+        var testClass = $('.testclass-selection .btn-group button.active').data('testclass') || 'test1';
         var myOpts = {
           title: {
             text: tfbRound + ' / ' + testClass
@@ -114,6 +114,7 @@
       }
 
 /*
+      // enable this when there's data for multiple rounds
       $('.navbar-nav li').click(function(e) {
         $('.navbar-nav li.active').removeClass("active");
         $(this).addClass('active');
@@ -121,7 +122,6 @@
       });
 */
 
-      $('.testclass-selection .btn-group button:first').addClass('active');
       $('.testclass-selection .btn-group button').click(function(e) {
         $('.testclass-selection .btn-group button.active').removeClass('active');
         $(this).addClass("active");
@@ -136,6 +136,5 @@
     });
 
 </script>
-
 
 </html>
