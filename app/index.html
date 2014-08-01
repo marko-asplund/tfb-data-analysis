@@ -16,6 +16,7 @@
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
     <script src="lib/papaparse-3.0.1.min.js"></script>
     <script src="tfb.js"></script>
+    <script src="config.js"></script>
 
   </head>
 
@@ -94,7 +95,8 @@
 
     $(function () {
 
-      var tfb = new TfbData();
+      var config = new Config();
+      var tfb = new TfbData(config);
 
       var getResults = function() {
         var tfbRound = $('.navbar-nav li.active').data('round');
@@ -104,7 +106,7 @@
             text: tfbRound + ' / ' + testClass
           }
         };
-        var opts = $.extend({}, tfb.chartOptions.default, tfb.chartOptions[testClass], myOpts);
+        var opts = config.getChartOptions(testClass, myOpts);
         tfb.getResults(tfbRound, testClass, function(data) {
           opts.series = data;
           $('#chart-container').highcharts(opts);
