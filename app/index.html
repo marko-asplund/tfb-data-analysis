@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>TFB data visualization</title>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="tfb.css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
     <script src="lib/papaparse-3.0.1.min.js"></script>
@@ -75,7 +75,13 @@
         <p><a class="btn btn-primary btn-lg" role="button" href="http://www.techempower.com/benchmarks/">Learn more &raquo;</a></p>
       </div>
 
-      <div id="chart-container" style=""></div>
+      <div id="chart-container"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">brought to you by <a href="http://practicingtechie.com/">practicingtechie.com</a></p>
+      </div>
+    </footer>
 
     </div> <!-- /container -->
 
@@ -125,6 +131,7 @@
       $('.testclass-selection .btn-group button').click(function(e) {
         $('.testclass-selection .btn-group button.active').removeClass('active');
         $(this).addClass("active");
+        $('#chart-container').addClass("active");
         getResults();
       });
 
