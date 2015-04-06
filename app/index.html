@@ -14,7 +14,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
-    <script src="lib/papaparse-3.0.1.min.js"></script>
+    <script src="lib/papaparse-4.1.0.min.js"></script>
     <script src="tfb.js"></script>
     <script src="config.js"></script>
 
@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active" data-round="round-9"><a href="#">Round 9</a></li>
-              <!-- <li data-round="round-10"><a href="#">Round10</a></li> -->
+              <li data-round="round-10"><a href="#">Round 10</a></li>
             </ul>
           </div>
         </div>
@@ -60,7 +60,7 @@
       <div class="jumbotron">
         <h2>TFB data visualization</h2>
 
-        <p>Benchmark data visualization for TechEmpower Web Framework Benchmarks.</p>
+        <p>Benchmark data visualization for TechEmpower Web Framework Benchmarks (Peak environment results).</p>
 
         <p>This site visualizes how well different test implementations scale as the number of client
         connections increases. This is done by plotting test implementation throughput against concurrency level
@@ -119,14 +119,12 @@
         });
       }
 
-/*
       // enable this when there's data for multiple rounds
       $('.navbar-nav li').click(function(e) {
         $('.navbar-nav li.active').removeClass("active");
         $(this).addClass('active');
         getResults();
       });
-*/
 
       $('.testclass-selection .btn-group button').click(function(e) {
         $('.testclass-selection .btn-group button.active').removeClass('active');

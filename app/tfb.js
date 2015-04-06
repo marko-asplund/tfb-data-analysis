@@ -5,7 +5,7 @@ function TfbData(config) {
 	return {
 		getResults: function(tfbRound, testClass, onReady) {
 
-			function parseData(testClass, data) {
+			function parseDataRound9(testClass, data) {
 				var raw = Papa.parse(data, { dynamicTyping: true });
 				var res = [];
 				var range = config.getDataParseOptions(testClass).columnRange;
@@ -24,10 +24,42 @@ function TfbData(config) {
 				return res;
 			};
 
+			function parseData(testClass, data) {
+				var types = {
+					"type1": "json",
+					"type2": "db",
+					"type3": "query",
+					"type4": "fortune",
+					"type5": "update",
+					"type6": "plaintext"
+				}
+				var classKey = types[testClass];
+				var res = [];
+				var testData = data['rawData'][classKey];
+				for (var fw in testData) {
+					var counts = [];
+					for(i = 0; i < testData[fw].length; i++) {
+						counts.push(testData[fw][i]["totalRequests"]);
+					}
+					res.push({
+						name: fw,
+						data: counts,
+						visible: false
+					});
+				}
+				return res;
+			};
+
 			console.log('getResults: '+tfbRound+', '+testClass);
-			$.get('/data/'+tfbRound+'/'+'tfb-'+testClass+'.csv', function(data) {
-				onReady(parseData(testClass, data));
-			});
+			if(tfbRound == 'round-9') {
+				$.get('/data/round-9/tfb-'+testClass+'.csv', function(data) {
+					onReady(parseDataRound9(testClass, data));
+				});
+			} else {
+				$.get('/data/'+tfbRound+'/results.json', function(results) {
+					onReady(parseData(testClass, results));
+				});
+			}
 		},
 	}
 }
