@@ -20,18 +20,26 @@ function TfbData(config) {
 				var testData = data['rawData'][classKey];
 				for (var fw in testData) {
 					var counts = [];
+					var isValidTestResult = true;
 					for(i = 0; i < testData[fw].length; i++) {
 						var requests = testData[fw][i]["totalRequests"];
+						if (typeof requests != 'number') {
+							isValidTestResult = false;
+							console.log("invalid data for "+fw+", skipping");
+							break;
+						}
 						var t = typeof testData[fw][i]['startTime'] == 'number' ?
 							testData[fw][i]['endTime'] - testData[fw][i]['startTime'] : duration;
 						var errors = typeof testData[fw][i]["5xx"] == 'number' ? testData[fw][i]["5xx"] : 0;
 						counts.push(Math.round( (requests-errors) / t));
 					}
-					res.push({
-						name: fw,
-						data: counts,
-						visible: false
-					});
+					if(isValidTestResult) {
+						res.push({
+							name: fw,
+							data: counts,
+							visible: false
+						});
+					}
 				}
 				return res.sort(function(a, b){return a.name.localeCompare(b.name)});
 			};
