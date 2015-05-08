@@ -12,12 +12,13 @@ function TfbData(config) {
 	}
 
 	return {
-		getResults: function(tfbRound, testClass, onReady) {
-			function parseData(testClass, data) {
-				var classKey = testTypes[testClass];
+		getResults: function(state, onReady) {
+			function parseData(state, data) {
+				var classKey = testTypes[state.testClass];
 				var res = [];
 				var duration = data['duration'];
 				var testData = data['rawData'][classKey];
+				console.log(JSON.stringify(state.selectedTests));
 				for (var fw in testData) {
 					var counts = [];
 					var isValidTestResult = true;
@@ -37,16 +38,16 @@ function TfbData(config) {
 						res.push({
 							name: fw,
 							data: counts,
-							visible: false
+							visible: state.selectedTests.has(fw)
 						});
 					}
 				}
 				return res.sort(function(a, b){return a.name.localeCompare(b.name)});
 			};
 
-			console.log('getResults: '+tfbRound+', '+testClass);
-			$.get('/data/'+tfbRound+'/results.json.gz', function(results) {
-				onReady(parseData(testClass, results));
+			console.log('getResults: '+state.tfbRound+', '+state.testClass);
+			$.get('/data/'+state.tfbRound+'/results.json.gz', function(results) {
+				onReady(parseData(state, results));
 			});
 		},
 	}

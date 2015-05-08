@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li data-round="round-9"><a href="#">Round 9</a></li>
-              <li class="active" data-round="round-10"><a href="#">Round 10</a></li>
+              <li data-round="round-10" class="active"><a href="#">Round 10</a></li>
             </ul>
           </div>
         </div>
@@ -103,22 +103,42 @@
       var config = new Config();
       var tfb = new TfbData(config);
 
+      var getParameterValue = function(param, defaultValue) {
+        console.log(window.location.search.substring(1));
+        var qs = window.location.search.substring(1).split("&");
+        for (var i in qs) {
+          var kv = qs[i].split("=");
+          if(kv[0] === param) {
+            console.log("p: "+param+": "+kv[1]);
+            return kv[1];
+          }
+        }
+        console.log("p: "+param+": default: "+defaultValue);
+        return defaultValue;
+      };
+
+      var getUIState = function() {
+        return {
+          tfbRound: getParameterValue("round", $('.navbar-nav li.active').data('round')),
+          testClass: getParameterValue("class", $('.testclass-selection .btn-group button.active').data('testclass') || 'test1'),
+          selectedTests: new Set(getParameterValue("tests", "").split(","))
+        };
+      }
+
       var getResults = function() {
-        var tfbRound = $('.navbar-nav li.active').data('round');
-        var testClass = $('.testclass-selection .btn-group button.active').data('testclass') || 'test1';
+        var state = getUIState();
         var myOpts = {
           title: {
-            text: tfbRound + ' / ' + testClass
+            text: state.tfbRound + ' / ' + state.testClass
           }
         };
-        var opts = config.getChartOptions(testClass, myOpts);
-        tfb.getResults(tfbRound, testClass, function(data) {
+        var opts = config.getChartOptions(state.testClass, myOpts);
+        tfb.getResults(state, function(data) {
           opts.series = data;
           $('#chart-container').highcharts(opts);
         });
       }
 
-      // enable this when there's data for multiple rounds
       $('.navbar-nav li').click(function(e) {
         $('.navbar-nav li.active').removeClass("active");
         $(this).addClass('active');
@@ -132,10 +152,22 @@
         getResults();
       });
 
-      $('.testclass-selection .btn-group button').bind('click', function(e) {
+      console.log("foo "+typeof getParameterValue("tests", null));
+
+      var state = getUIState();
+      if(typeof state.selectedTests != 'undefined') {
+        $('.navbar-nav li.active').removeClass("active");
+        $('.navbar-nav li[data-round="'+state.tfbRound+'"]').addClass("active");
+        $('.testclass-selection .btn-group button[data-testclass="'+state.testClass+'"]').addClass("active");
+        $('#chart-container').addClass("active");
         $('.jumbotron').hide();
-        $(this).unbind(e);
-      });
+        getResults();
+      } else {
+        $('.testclass-selection .btn-group button').bind('click', function(e) {
+          $('.jumbotron').hide();
+          $(this).unbind(e);
+        });
+      }
 
     });
 
