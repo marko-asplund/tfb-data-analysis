@@ -45,7 +45,7 @@ function TfbData(config) {
 			};
 
 			console.log('getResults: '+tfbRound+', '+testClass);
-			$.get('/data/'+tfbRound+'/results.json', function(results) {
+			$.get('/data/'+tfbRound+'/results.json.gz', function(results) {
 				onReady(parseData(testClass, results));
 			});
 		},
