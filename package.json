@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/marko-asplund/tfb-data-analysis",
   "dependencies": {
-    "express": "^4.7.2"
+    "express": "^4.7.2",
+    "ms": "^0.7.1"
   }
 }
