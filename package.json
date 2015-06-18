@@ -1,6 +1,6 @@
 {
   "name": "tfb-data-analysis",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "tfb-data-analysis =================",
   "main": "server.js",
   "scripts": {

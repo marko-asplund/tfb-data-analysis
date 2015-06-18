@@ -28,10 +28,8 @@ function TfbData(config) {
 							console.log("invalid data for "+fw+", skipping");
 							break;
 						}
-						var t = typeof testData[fw][i]['startTime'] == 'number' ?
-							testData[fw][i]['endTime'] - testData[fw][i]['startTime'] : duration;
 						var errors = typeof testData[fw][i]["5xx"] == 'number' ? testData[fw][i]["5xx"] : 0;
-						counts.push(Math.round( (requests-errors) / t));
+						counts.push(Math.round( (requests-errors) / duration));
 					}
 					if(isValidTestResult) {
 						res.push({
