@@ -38,8 +38,9 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li data-round="round-9"><a href="#">Round 9</a></li>
-              <li class="active" data-round="round-10"><a href="#">Round 10</a></li>
+              <li data-round="round-10"><a href="#">Round 10</a></li>
               <li data-round="round-11"><a href="#">Round 11</a></li>
+              <li class="active" data-round="round-12"><a href="#">Round 12</a></li>
             </ul>
           </div>
         </div>
@@ -101,18 +102,18 @@
 
     $(function () {
 
-      var config = new Config();
-      var tfb = new TfbData(config);
+      const config = new Config();
+      const tfb = new TfbData(config);
 
-      var getResults = function() {
-        var tfbRound = $('.navbar-nav li.active').data('round');
-        var testClass = $('.testclass-selection .btn-group button.active').data('testclass') || 'test1';
-        var myOpts = {
+      const getResults = function() {
+        const tfbRound = $('.navbar-nav li.active').data('round');
+        const testClass = $('.testclass-selection .btn-group button.active').data('testclass') || 'test1';
+        const myOpts = {
           title: {
             text: tfbRound + ' / ' + testClass
           }
         };
-        var opts = config.getChartOptions(testClass, myOpts);
+        const opts = config.getChartOptions(testClass, myOpts);
         tfb.getResults(tfbRound, testClass, function(data) {
           opts.series = data;
           $('#chart-container').highcharts(opts);

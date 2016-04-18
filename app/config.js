@@ -1,6 +1,6 @@
 
 function Config() {
-	var parseOptions = {
+	const parseOptions = {
 		default: {
 			columnRange: [1, 7]
 		},
@@ -15,7 +15,7 @@ function Config() {
 		}
 	};
 
-	var chartOptions = {
+	const chartOptions = {
     default: {
       subtitle: {
         text: 'TFB',

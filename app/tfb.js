@@ -14,21 +14,21 @@ function TfbData(config) {
 	return {
 		getResults: function(tfbRound, testClass, onReady) {
 			function parseData(testClass, data) {
-				var classKey = testTypes[testClass];
-				var res = [];
-				var duration = data['duration'];
-				var testData = data['rawData'][classKey];
-				for (var fw in testData) {
-					var counts = [];
-					var isValidTestResult = true;
+				const classKey = testTypes[testClass];
+				const res = [];
+				const duration = data['duration'];
+				const testData = data['rawData'][classKey];
+				for (let fw in testData) {
+					const counts = [];
+					let isValidTestResult = true;
 					for(i = 0; i < testData[fw].length; i++) {
-						var requests = testData[fw][i]["totalRequests"];
+						const requests = testData[fw][i]["totalRequests"];
 						if (typeof requests != 'number') {
 							isValidTestResult = false;
-							console.log("invalid data for "+fw+", skipping");
+							console.log("WARN: invalid data for "+fw+", skipping");
 							break;
 						}
-						var errors = typeof testData[fw][i]["5xx"] == 'number' ? testData[fw][i]["5xx"] : 0;
+						const errors = typeof testData[fw][i]["5xx"] == 'number' ? testData[fw][i]["5xx"] : 0;
 						counts.push(Math.round( (requests-errors) / duration));
 					}
 					if(isValidTestResult) {
@@ -42,7 +42,7 @@ function TfbData(config) {
 				return res.sort(function(a, b){return a.name.localeCompare(b.name)});
 			};
 
-			console.log('getResults: '+tfbRound+', '+testClass);
+			console.log('debug: getResults: '+tfbRound+', '+testClass);
 			$.get('/data/'+tfbRound+'/results.json.gz', function(results) {
 				onReady(parseData(testClass, results));
 			});
