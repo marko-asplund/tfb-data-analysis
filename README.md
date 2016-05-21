@@ -8,7 +8,6 @@ Learn more about [TechEmpower Web Framework Benchmark](http://www.techempower.co
 
 Implementation technologies and libraries:
 - Highcharts JS charting library
-- Papa Parse CSV parser
 - JQuery v2
 - Bootstrap v3
 - express web development framework for Node.js
