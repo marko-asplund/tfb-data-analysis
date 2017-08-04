@@ -19,5 +19,9 @@
   "dependencies": {
     "express": "^4.7.2",
     "ms": "^0.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0"
   }
 }
